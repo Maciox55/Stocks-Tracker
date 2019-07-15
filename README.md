@@ -1,3 +1,5 @@
+This is a Demo,  Alpha Advantage's API limits are 5 requests per minute on the free API Key. Therefore you may experience some weird behavior, things like graphs not loading in, empty page, missing stock information. Listen, I get it,you want to track your stocks, get the real time intra-day stock prices, but you must understand; If someone else is using this demo at the same time as you, it will not work and you will have to wait a minute and refresh the page. It be like that sometimes... Normally the API key would allow more requests but its mad expensive and I need a job so... 
+
 # Stocksapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
