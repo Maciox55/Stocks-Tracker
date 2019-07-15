@@ -1,0 +1,22 @@
+<div class="stock">
+  <div class="stock-summary">
+    <div class="stock-symbol">
+      {{stock['1. symbol']}}
+    </div>
+    <div class="stock-type">{{stock['3. type']}}</div>
+
+    <div class="stock-price">{{stock.close | currency}}</div>
+    <div class="options">
+      <input class="option" type="button" value="1D">
+      <input class="option" type="button" value="X" (click)="removeSelf()">
+    </div>
+  </div>
+  <div class="stock-options">
+
+  </div>
+  <div class="stock-detail">
+    <div *ngIf="stockData != null">
+      <canvas class="stock-chart" baseChart  [datasets]="stockData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins"></canvas>
+    </div>
+  </div>
+</div>

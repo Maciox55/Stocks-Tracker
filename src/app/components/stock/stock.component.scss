@@ -1,0 +1,82 @@
+.stock{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat';
+    flex: 1 0 auto;
+    margin: 10px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.568);
+
+    border-bottom: 5px solid rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+    .stock-summary{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+        flex: 0 0 auto;
+        .stock-symbol{
+            height: 100%;
+            letter-spacing: 3px;
+            color: rgba(78, 78, 78, 0.767);
+            font-size: 24px;
+            font-weight: 900;
+            padding: 10px;
+            flex: 0 0 25px;
+        }
+        .stock-price{
+            height: 100%;
+            font-family: 'Montserrat';
+            color: rgb(0, 255, 0);
+            font-size: 20px;
+            font-weight: 900;
+            padding: 10px;
+            flex: 1 1 auto;
+        }
+        .stock-type{
+            font-size: 12px;
+            font-family: 'Montserrat';
+            padding: 10px;
+            flex: 0 0 25px;
+        }
+    }
+    .options{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 150px;
+        align-self:right;
+        .option{
+            border: none;
+            padding: 5px;
+            width: 40px;
+            height: 40px;
+            margin: 0px 0px;
+            border: 1px solid rgba(255, 255, 255, 0.808);
+            background-color: rgba(241, 241, 241, 0.555);
+            color: rgb(134, 134, 134);
+        }
+        .option:first-child{
+            border-radius: 5px 0px 0px 5px;
+        }
+        .option:last-child{
+            border-radius: 0px 5px 5px 0px;
+        }
+        .option:hover{
+            background-color: rgb(255, 255, 255);
+        }
+    }
+    .stock-detail{
+        padding: 10px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 600px;
+        border-left: 5px solid rgba(255, 255, 255, 0.212);
+
+        canvas.stock-chart{
+            flex: 1 0 250px;
+            height: 100%;
+        }
+    }
+    
+}
