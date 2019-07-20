@@ -35,7 +35,8 @@ export class StockComponent implements OnInit {
   scales: {
       yAxes: [{
           ticks: {
-              beginAtZero: true
+              //beginAtZero: true,
+              //min:0
           },
           gridLines: {
             display: false,
@@ -80,7 +81,7 @@ export class StockComponent implements OnInit {
         this.stockData.push({data: result['Time Series (15min)'][key]['4. close']});
       }
       console.log(this.stockData);
-      // this.lineChartOptions.scales.yAxes[0].ticks.min = Math.min.apply(this,this.stockData.data)-1;
+      //this.lineChartOptions.scales.yAxes[0].ticks.min = Math.min.apply(this,this.stockData.data);
       // this.lineChartOptions.scales.yAxes[0].ticks.max = Math.max.apply(this,this.stockData.data)+1;
      
 

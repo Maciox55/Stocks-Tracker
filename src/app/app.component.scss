@@ -17,7 +17,7 @@
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
     .stocks{
-        position: relative;
+        position: absolute;
         font-family: 'Montserrat';
         font-size: 32px;
         font-weight: 900;
@@ -27,6 +27,7 @@
         margin-left: 250px;
     }
     .search{
+        position: relative;
         flex: 0 0 200px;
         input{
             position: relative;
@@ -45,13 +46,12 @@
             color: rgba(248, 248, 248, 0.904);
         }
         .searchResults{
-            position: relative;
+            position: absolute;
             margin: 0;
             padding: 0;
-            left: 25%;
-            top: 250px;
+            top: 55px;
             list-style: none;
-            width: 100%;
+            width: 225px;
 
             .searchResult{
                 background-color: white;
