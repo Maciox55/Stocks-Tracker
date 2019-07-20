@@ -35,9 +35,7 @@ export class StockComponent implements OnInit {
   scales: {
       yAxes: [{
           ticks: {
-              beginAtZero: true,
-              min:0,
-              max: 100
+              beginAtZero: true
           },
           gridLines: {
             display: false,

@@ -19,7 +19,7 @@ export class AppComponent {
   searchTerm$ = new Subject<string>();
   constructor(private searchService: SearchService, private dialog: MatDialog) {
     this.dialog.open(WarningModalComponent, {
-      height: '400px',
+      height: '450px',
       width: '600px',
     });
 
