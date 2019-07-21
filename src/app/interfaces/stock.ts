@@ -7,4 +7,6 @@ export interface Stock {
     open: number;
     close: number;
     volume: number;
+    percentChange: number;
+    
 }

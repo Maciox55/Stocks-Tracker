@@ -5,18 +5,20 @@
     </div>
     <div class="stock-type">{{stock['3. type']}}</div>
 
-    <div class="stock-price">{{stock.close | currency}}</div>
+    <div class="stock-price">{{stock.close | currency}} ({{stock.percentChange}})</div>
     <div class="options">
       <input class="option" type="button" value="1D">
-      <input class="option" type="button" value="X" (click)="removeSelf()">
+      <input class="option delete" type="button" value="X" (click)="removeSelf()">
     </div>
   </div>
-  <div class="stock-options">
-
-  </div>
+  
   <div class="stock-detail">
-    <div *ngIf="stockData != null">
-      <canvas class="stock-chart" baseChart  [datasets]="stockData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins"></canvas>
+    <div class="stock-title">{{stock['2. name']}}</div>
+    <div class="stock-graph">
+      <div *ngIf="stockData != null">
+        <canvas class="stock-chart" baseChart  [datasets]="stockData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend" [chartType]="lineChartType" [colors]="lineChartColors" [plugins]="lineChartPlugins"></canvas>
+      </div>
     </div>
   </div>
+
 </div>

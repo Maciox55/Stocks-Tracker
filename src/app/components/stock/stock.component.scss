@@ -4,10 +4,10 @@
     font-family: 'Montserrat';
     flex: 1 0 auto;
     margin: 10px;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.568);
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.274);
 
-    border-bottom: 5px solid rgba(255, 255, 255, 0.212);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.096);
     border-radius: 10px;
     .stock-summary{
         height: 100%;
@@ -18,23 +18,23 @@
         .stock-symbol{
             height: 100%;
             letter-spacing: 3px;
-            color: rgba(78, 78, 78, 0.767);
+            color: rgba(0, 0, 0, 0.767);
             font-size: 24px;
             font-weight: 900;
             padding: 10px;
             flex: 0 0 25px;
         }
         .stock-price{
-            height: 100%;
+            height: auto;
             font-family: 'Montserrat';
-            color: rgb(0, 255, 0);
-            font-size: 20px;
+            color: rgb(2, 214, 2);
+            font-size: 24px;
             font-weight: 900;
             padding: 10px;
             flex: 1 1 auto;
         }
         .stock-type{
-            font-size: 12px;
+            font-size: 16px;
             font-family: 'Montserrat';
             padding: 10px;
             flex: 0 0 25px;
@@ -43,17 +43,19 @@
     .options{
         display: flex;
         flex-direction: row;
-        flex: 1 1 150px;
-        align-self:right;
+        flex: 1 1 auto;
+        align-items:flex-end;
+        justify-content: flex-end;
+        margin: 3px;
         .option{
             border: none;
             padding: 5px;
             width: 40px;
             height: 40px;
             margin: 0px 0px;
-            border: 1px solid rgba(255, 255, 255, 0.808);
-            background-color: rgba(241, 241, 241, 0.555);
-            color: rgb(134, 134, 134);
+            border: 1px solid rgba(255, 255, 255, 0.199);
+            background-color: rgba(241, 241, 241, 0.295);
+            color: rgba(255, 255, 255, 0.692);
         }
         .option:first-child{
             border-radius: 5px 0px 0px 5px;
@@ -62,21 +64,36 @@
             border-radius: 0px 5px 5px 0px;
         }
         .option:hover{
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0.575);
+        }
+        .option.delete:hover{
+            color: white;
+            background-color: rgba(255, 0, 0, 0.7);
         }
     }
+
     .stock-detail{
-        padding: 10px;
-        margin-left: 10px;
         display: flex;
         flex-direction: column;
-        flex: 1 0 600px;
-        border-left: 5px solid rgba(255, 255, 255, 0.212);
+        border-left: 2px solid rgba(255, 255, 255, 0.096);
+        height: auto;
+        flex: 1 0 400px;
+        .stock-title{
+            padding: 10px;
+            margin-left: 10px;
+            font-size: 1em;
+            font-weight: 800;
+        }
+        .stock-graph{
+            padding: 10px;
+            margin-left: 10px;
+            display: flex;
+            flex: 1 0 auto;
 
-        canvas.stock-chart{
-            flex: 1 0 250px;
-            height: 100%;
+            canvas.stock-chart{
+                height: 100%;
+                
+            }
         }
     }
-    
 }

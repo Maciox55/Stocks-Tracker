@@ -1,8 +1,8 @@
 <div class="navbar">
   <div class="search">
-    <input type="text" placeholder="SEARCH" (keyup)="searchTerm$.next($event.target.value)">
+    <input type="text" placeholder="SEARCH" (keyup)="searchTerm$.next($event.target.value)" >
     <div class="searchResults" *ngIf="searchResults">
-        <div class="searchResult" *ngFor="let result of searchResults" (click)="foo(this.result)">
+        <div class="searchResult" *ngFor="let result of searchResults" (click)="foo(this.result)" (focusout)="focusOutFunction()">
             {{result['1. symbol']}} |  {{result['2. name']}}
         </div>
       </div>
